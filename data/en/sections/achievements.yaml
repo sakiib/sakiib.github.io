@@ -22,3 +22,6 @@ achievements:
 - title: Award Winner
   image: /images/sections/achievements/woman-winner.jpg
   summary: Wined best paper award at IEE Conference 2020.
+- title: Test Image
+  image: /images/sections/achievements/1.jpg
+  summary: Testing Image Upload.
