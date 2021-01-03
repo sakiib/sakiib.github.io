@@ -11,7 +11,7 @@ section:
 # Your achievements achievements
 achievements:
 - title: Best Presenter
-  image: /images/sections/achievements/presenter.jpg
+  image: /images/sections/achievements/1.jpg
   summary: Best presenter in the 2020 XYZ conference.
 - title: Champion
   image: /images/sections/achievements/sport.jpg
@@ -22,6 +22,3 @@ achievements:
 - title: Award Winner
   image: /images/sections/achievements/woman-winner.jpg
   summary: Wined best paper award at IEE Conference 2020.
-- title: Test Image
-  image: /images/sections/achievements/1.jpg
-  summary: Testing Image Upload.
