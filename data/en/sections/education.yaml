@@ -21,7 +21,7 @@ degrees:
     achieved: 3.5
     outOf: 4
  
- - name: Higher Secondary School Certificate
+- name: Higher Secondary School Certificate
   icon: fa-university
   timeframe: 2013-2015
   institution:
