@@ -18,16 +18,6 @@ degrees:
     url: "http://www.northsouth.edu/"
   grade: #(optional)
     scale: CGPA
-    achieved: 3.5
+    achieved: 3.47
     outOf: 4
- 
-- name: Higher Secondary School Certificate
-  icon: fa-university
-  timeframe: 2013-2015
-  institution:
-    name: Shaheed Ramiz Uddin Cantonment College
-    url: "http://srcc.edu.bd/"
-  grade: #(optional)
-    scale: GPA
-    achieved: 5
-    outOf: 5
+
