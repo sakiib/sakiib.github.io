@@ -18,7 +18,11 @@ company:
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a passionate Software Engineer & Competitive Programming Enthusiast. \n During my undergraduate studies at North South University, I was involved extensively in competitive programming. During this period, I was a regular member of NSU Problem Solvers (A community for Problem Solvers in NSU) & I had the privilege to represent my university in various national & international programming contests. I joined AppsCode Inc. in December 2020. During this period, I have learned Git, Golang, Docker & currently learning Kubernetes. In general, I enjoy learning new tricks/techniques for solving problems & wondering how to apply them to solve some real-world problems. Besides that, I love listening to Music, Cycling & outdoor sports like Cricket, Football, etc.'
+summary: |
+  'I am a passionate Software Engineer & Competitive Programming Enthusiast. During my undergraduate studies at North South University, I was involved extensively in competitive programming. During this period, I was a regular member of NSU Problem Solvers (A community for Problem Solvers in NSU) & I had the privilege to represent my university in various national & international programming contests. 
+   I joined AppsCode Inc. in December 2020. During this period, I have learned Git, Golang, Docker & currently learning Kubernetes. 
+   In general, I enjoy learning new tricks/techniques for solving problems & wondering how to apply them to solve some real-world problems. Besides that, I love listening to Music, Cycling & outdoor sports like Cricket, Football, etc.
+   '
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
