@@ -11,7 +11,7 @@ section:
 # Your achievements achievements
 achievements:
 - title: Best Presenter
-  image: /images/sections/achievements/1.jpg
+  image: /images/sections/achievements/presenter.jpg
   summary: Best presenter in the 2020 XYZ conference.
 - title: Champion
   image: /images/sections/achievements/sport.jpg
