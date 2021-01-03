@@ -6,10 +6,9 @@ greeting: "Hi, I am"
 image: "images/author/sakib.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
-  email: "sakibalamin162@gmail.com.com"
+  email: "sakibalamin162@gmail.com"
   phone: "+8801626204832"
 
 # some summary about what you do
 summary:
   - I am a Software Engineer
-  - I am a Competitive Programmer
