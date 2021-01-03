@@ -10,7 +10,7 @@ section:
 
 # Your experiences
 experiences:
-- company
+- company:
     name: AppsCode Inc.
     url: "https://appscode.com/"
     location: Dhaka
@@ -22,5 +22,3 @@ experiences:
     - Write lots of example codes.
     - Read lots of examples.
     - See lots of example videos.
-
-
