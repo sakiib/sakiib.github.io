@@ -17,9 +17,9 @@ skills:
   url: "https://golang.org/"
   
 - name: Kubernetes
-  icon: /images/skills/kubernetes.png
+  logo: /images/skills/kubernetes.png
   summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: https://kubernetes.io/
+  url: "https://kubernetes.io/"
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
