@@ -23,7 +23,7 @@ degrees:
  
  - name: Higher Secondary School Certificate
   icon: fa-university
-  # timeframe: 2013-2015
+  timeframe: 2013-2015
   institution:
     name: Shaheed Ramiz Uddin Cantonment College
     url: "http://srcc.edu.bd/"
