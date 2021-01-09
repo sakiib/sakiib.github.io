@@ -11,14 +11,42 @@ section:
 # Your achievements achievements
 achievements:
 - title: Best Presenter
-  image: /images/sections/achievements/presenter.jpg
+  image: /images/sections/achievements/1.jpg
   summary: Best presenter in the 2020 XYZ conference.
 - title: Champion
-  image: /images/sections/achievements/sport.jpg
+  image: /images/sections/achievements/2.jpg
   summary: Champion in cycling inter-city cycling championship 2020.
 - title: Graduation
-  image: /images/sections/achievements/graduation-cap.jpg
+  image: /images/sections/achievements/3.jpg
   summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.
 - title: Award Winner
-  image: /images/sections/achievements/woman-winner.jpg
+  image: /images/sections/achievements/4.jpg
   summary: Wined best paper award at IEE Conference 2020.
+- title: Best Presenter
+  image: /images/sections/achievements/5.jpg
+  summary: Best presenter in the 2020 XYZ conference.
+- title: Champion
+  image: /images/sections/achievements/6.jpg
+  summary: Champion in cycling inter-city cycling championship 2020.
+- title: Graduation
+  image: /images/sections/achievements/7.jpg
+  summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.
+- title: Award Winner
+  image: /images/sections/achievements/8.jpg
+  summary: Wined best paper award at IEE Conference 2020.
+- title: Best Presenter
+  image: /images/sections/achievements/9.jpg
+  summary: Best presenter in the 2020 XYZ conference.
+- title: Champion
+  image: /images/sections/achievements/10.jpg
+  summary: Champion in cycling inter-city cycling championship 2020.
+- title: Graduation
+  image: /images/sections/achievements/11.jpg
+  summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.
+- title: Award Winner
+  image: /images/sections/achievements/12.jpg
+  summary: Wined best paper award at IEE Conference 2020.
+- title: Best Presenter
+  image: /images/sections/achievements/13.jpg
+  summary: Best presenter in the 2020 XYZ conference.
+
