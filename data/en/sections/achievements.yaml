@@ -10,18 +10,18 @@ section:
 
 # Your achievements achievements
 achievements:
-- title: BUP IUPC 2019
-  image: /images/sections/achievements/1.jpg
-  summary: NSU Gandalf, 16th position
+- title: SUST Inter University Programming Contest 2019
+  image: /images/sections/achievements/4.jpg
+  summary: NSU MeowMax, 13th position
 - title: Intra NSU Programming Contest Fall 2018
   image: /images/sections/achievements/2.jpg
   summary: 4th position
 - title: SUB Inter University Programming Contest 2019
   image: /images/sections/achievements/3.jpg
   summary: NSU_YetItCompiles3.5, 25th position
-- title: SUST Inter University Programming Contest 2019
-  image: /images/sections/achievements/4.jpg
-  summary: NSU MeowMax, 13th position
+- title: BUP IUPC 2019
+  image: /images/sections/achievements/1.jpg
+  summary: NSU Gandalf, 16th position
 - title: Technocracy 2019 by RUET, IUPC
   image: /images/sections/achievements/5.jpg
   summary: NSU MeowMax, 6th position
