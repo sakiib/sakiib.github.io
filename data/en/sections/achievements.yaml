@@ -10,40 +10,40 @@ section:
 
 # Your achievements achievements
 achievements:
-- title: Best Presenter
+- title: BUP IUPC 2019
   image: /images/sections/achievements/1.jpg
-  summary: Best presenter in the 2020 XYZ conference.
-- title: Champion
+  summary: NSU Gandalf, 16th position
+- title: Intra NSU Programming Contest Fall 2018
   image: /images/sections/achievements/2.jpg
-  summary: Champion in cycling inter-city cycling championship 2020.
-- title: Graduation
+  summary: 4th position
+- title: SUB Inter University Programming Contest 2019
   image: /images/sections/achievements/3.jpg
-  summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.
-- title: Award Winner
+  summary: NSU_YetItCompiles3.5, 25th position
+- title: SUST Inter University Programming Contest 2019
   image: /images/sections/achievements/4.jpg
-  summary: Wined best paper award at IEE Conference 2020.
-- title: Best Presenter
+  summary: NSU MeowMax, 13th position
+- title: Technocracy 2019 by RUET, IUPC
   image: /images/sections/achievements/5.jpg
-  summary: Best presenter in the 2020 XYZ conference.
-- title: Champion
+  summary: NSU MeowMax, 6th position
+- title: RUET
   image: /images/sections/achievements/6.jpg
-  summary: Champion in cycling inter-city cycling championship 2020.
-- title: Graduation
+  summary: RUET IUPC, Technocracy
+- title: Technocracy 2019 by RUET, IUPC
   image: /images/sections/achievements/7.jpg
-  summary: Received Bachelor of Science (B.Sc.) in Computer Science and Engineer from XYZ University.
-- title: Award Winner
+  summary: NSU MeowMax, 6th position
+- title: Brain Craft Ltd. - Bitfest KUET IUPC, 2019
   image: /images/sections/achievements/8.jpg
-  summary: Wined best paper award at IEE Conference 2020.
-- title: Best Presenter
+  summary: NSU MeowMax, 5th position
+- title: ICPC Dhaka Regional 2019
   image: /images/sections/achievements/9.jpg
-  summary: Best presenter in the 2020 XYZ conference.
-- title: Champion
+  summary: NSU MeowMax, 18th position
+- title: Intra NSU Programming Contest, Spring 2020
   image: /images/sections/achievements/10.jpg
-  summary: Champion in cycling inter-city cycling championship 2020.
-- title: Award Winner
+  summary: Champion of Intra NSU Programming Contest
+- title: Intra NSU Programming Contest, Spring 2020
   image: /images/sections/achievements/12.jpg
-  summary: Wined best paper award at IEE Conference 2020.
-- title: Best Presenter
+  summary: During Contest of Intra NSU Programming Contest
+- title: ICPC Dhaka Regional 2019
   image: /images/sections/achievements/13.jpg
-  summary: Best presenter in the 2020 XYZ conference.
+  summary: NSU MeowMax, 18th position
 
