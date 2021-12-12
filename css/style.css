@@ -1,0 +1,87 @@
+
+ /*Font Awesome Free Icon*/
+ @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+ /*Google fonts*/
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
+
+
+.section{
+     background-color: #282a28;
+     min-height: 100vh;
+     display: block;
+     padding: 0 30px;
+ }
+
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.shadow-dark{
+    -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.home{
+     min-height: 100vh;
+     display: -ms-flexbox;
+     display: flex;
+
+ }
+
+.home .intro{
+    text-align: center;
+}
+
+.home .intro img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    border:8px solid grey;
+}
+
+.home .intro h1{
+    font-size: 30px;
+    color:#ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    margin:20px 0 5px;
+}
+
+.home .intro p{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 22px;
+    color: grey;
+}
+
+.home .intro .social-links{
+    margin-top: 25px;
+}
+
+.home .intro .social-links a{
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    margin-top: 0 4px;
+    border-radius: 50%;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.home .intro .social-links a:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.home .intro .social-links a{
+    background-color: grey;
+}
