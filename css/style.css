@@ -56,7 +56,7 @@
     font-weight: 500;
     margin: 0;
     line-height: 22px;
-    color: grey;
+    color: gainsboro;
 }
 
 .home .intro .social-links{
@@ -84,4 +84,10 @@
 
 .home .intro .social-links a{
     background-color: grey;
+}
+
+.home .intro .footer p{
+    margin-top: 35%;
+    color: grey;
+    font-size: 20px;
 }
