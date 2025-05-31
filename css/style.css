@@ -39,7 +39,7 @@ a:hover {
     /* Removed display: flex and align-items: flex-start to allow natural block flow */
     justify-content: center; /* Center horizontally */
     background-color: #1A202C; /* A dark charcoal/blue-gray for the background */
-    padding: 20px; /* Add some padding around the content */
+    /* padding: 20px; Add some padding around the content */
 }
 
 .section {
@@ -52,7 +52,7 @@ a:hover {
     /* max-width: 800px; Increased max-width for better readability */
     width: 100%;
     margin: auto;
-    padding: 20px; /* Inner padding for the container */
+    /* padding: 20px; Inner padding for the container */
 }
 
 /* Home Section - Intro (main card) */
