@@ -165,9 +165,12 @@ p.about-text {
 }
 
 .job-details li {
-    font-weight: 600; /* Make nested roles bolder */
-    color: #CBD5E0; /* Keep existing color */
-    margin-bottom: 12px; /* Increased spacing for better separation */
+    background-color: #5473a6; /* Even darker background for individual job entries */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px; /* Space between job entries */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for entries */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .job-responsibilities li {
