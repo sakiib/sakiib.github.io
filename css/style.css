@@ -1,93 +1,295 @@
-
- /*Font Awesome Free Icon*/
- @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
  /*Google fonts*/
  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
  @import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
 
+/* Universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-.section{
-     background-color: #282a28;
-     min-height: 100vh;
-     display: block;
-     padding: 0 30px;
- }
+html, body {
+    /* Removed height: 100% to allow natural content height */
+    font-family: 'Montserrat', sans-serif; /* Default body font */
+    line-height: 1.6;
+    color: #E2E8F0; /* Light gray for general text */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
 
-.container{
-/*     max-width: 1100px; */
+a {
+    color: #4299E1; /* A subtle blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #63B3ED; /* Slightly lighter blue on hover */
+}
+
+/* Helper classes */
+.shadow-dark {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer, slightly larger shadow */
+}
+
+/* Main Layout */
+.main-content {
+    /* Removed min-height: 100vh to allow content to dictate height */
+    /* Removed display: flex and align-items: flex-start to allow natural block flow */
+    justify-content: center; /* Center horizontally */
+    background-color: #1A202C; /* A dark charcoal/blue-gray for the background */
+    padding: 20px; /* Add some padding around the content */
+}
+
+.section {
+    /* Removed display: flex and align-items: flex-start to allow natural block flow */
+    /* Removed justify-content: center as it's redundant with container margin: auto */
+    width: 100%;
+}
+
+.container {
+    /* max-width: 800px; Increased max-width for better readability */
     width: 100%;
     margin: auto;
+    padding: 20px; /* Inner padding for the container */
 }
 
-.shadow-dark{
-    -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-}
-
-.home{
-     min-height: 100vh;
-     display: -ms-flexbox;
-     display: flex;
-
- }
-
-.home .intro{
+/* Home Section - Intro (main card) */
+.home .intro {
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items within the column */
+    padding: 30px; /* Padding inside the intro box */
+    background-color: #2D3748; /* Slightly lighter dark background for the content box */
+    border-radius: 12px; /* Nicer rounded corners */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* More pronounced shadow for the card effect */
 }
 
-.home .intro img{
-    height: 200px;
-    width: 200px;
+.home .intro img {
+    height: 180px; /* Slightly adjusted size */
+    width: 180px;
     border-radius: 50%;
-    display: inline-block;
-    border:8px solid grey;
+    border: 5px solid #4A5568; /* Softer, complementary border color */
+    object-fit: cover; /* Ensures image covers the area */
+    margin-bottom: 25px; /* Spacing below image */
 }
 
-.home .intro h1{
-    font-size: 25px;
-    color:#ffffff;
+.home .intro h1 {
     font-family: 'Rubik', sans-serif;
+    font-size: 2.2rem; /* Scaled font size */
+    color: #F7FAFC; /* Pure white for heading */
     font-weight: 700;
-    margin:20px 0 5px;
+    margin: 0 0 10px; /* Adjusted margin */
 }
 
-.home .intro p{
-    font-size: 20px;
+.home .intro p.tagline {
+    font-size: 1.1rem;
     font-weight: 500;
-    margin: 0;
-    line-height: 25px;
-    color: gainsboro;
+    color: #A0AEC0; /* Slightly lighter gray for tagline */
+    margin-bottom: 30px; /* More spacing below tagline */
 }
 
-.home .intro .social-links{
-    margin-top: 25px;
-}
-
-.home .intro .social-links a{
-    height: 35px;
-    width: 35px;
-    display: inline-block;
+/* Section Titles (About, Experience) */
+.section-title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+    color: #F7FAFC;
+    font-weight: 700;
+    margin-top: 40px; /* Spacing above section titles */
+    margin-bottom: 20px;
     text-align: center;
-    line-height: 35px;
-    color: white;
-    margin-top: 0 8px;
+    width: 100%; /* Ensure it takes full width for centering */
+}
+
+/* About Me section */
+p.about-text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #CBD5E0; /* Softer text color */
+    margin-bottom: 30px; /* Spacing below paragraph */
+    line-height: 1.8; /* Improved line height for readability */
+    text-align: left; /* Align about text left */
+    /* max-width: 600px; Constrain width for readability */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Experience Section */
+.experience-section {
+    width: 90%;
+    text-align: left; /* Align job entries left */
+    /* max-width: 600px; Constrain width for readability */
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.job-entry {
+    background-color: #242D3B; /* Even darker background for individual job entries */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px; /* Space between job entries */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for entries */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-entry:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.job-entry h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem; /* Slightly larger for company name */
+    color: #4299E1; /* A more prominent blue */
+    margin-bottom: 10px; /* More space below company name */
+    font-weight: 700; /* Bolder */
+}
+
+.job-duration, .job-location, .job-projects, .job-tools {
+    font-size: 0.95rem;
+    color: #A0AEC0; /* Lighter gray for meta info */
+    margin-bottom: 5px;
+}
+
+.job-details, .job-responsibilities {
+    list-style-type: disc; /* Or 'none' if preferred without bullets */
+    margin-left: 20px;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #E2E8F0;
+}
+
+.job-details li {
+    font-weight: 600; /* Make nested roles bolder */
+    color: #CBD5E0; /* Keep existing color */
+    margin-bottom: 12px; /* Increased spacing for better separation */
+}
+
+.job-responsibilities li {
+    margin-bottom: 8px;
+}
+
+.job-responsibilities li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Social Links */
+.social-links {
+    margin-top: 40px; /* More spacing before social links */
+    display: flex;
+    justify-content: center; /* Center social icons horizontally */
+    gap: 15px;
+}
+
+.social-links a {
+    height: 45px;
+    width: 45px;
+    background-color: #4A5568;
+    color: #F7FAFC;
     border-radius: 50%;
-    text-decoration: none;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    font-size: 1.3rem;
+    display: flex; /* Use flexbox for perfect centering of icon */
+    justify-content: center;
+    align-items: center;
 }
 
-.home .intro .social-links a:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+.social-links a:hover {
+    background-color: #4299E1;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.home .intro .social-links a{
-    background-color: grey;
+/* Footer */
+.footer p {
+    margin-top: 50px; /* More standard spacing */
+    color: #A0AEC0;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
 
-.home .intro .footer p{
-    margin-top: 40%;
-    color: grey;
-    font-size: 20px;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+
+    .home .intro {
+        padding: 20px;
+    }
+
+    .home .intro img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .home .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .home .intro p.tagline, p.about-text {
+        font-size: 1rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .job-entry h3 {
+        font-size: 1.2rem;
+    }
+    .job-details li, .job-responsibilities li {
+        font-size: 0.9rem;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .social-links a {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .footer p {
+        margin-top: 30px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    .home .intro {
+        padding: 15px;
+    }
+
+    .home .intro img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .home .intro h1 {
+        font-size: 1.5rem;
+    }
+    .section-title {
+        font-size: 1.3rem;
+    }
+    .job-entry h3 {
+        font-size: 1.1rem;
+    }
+    .job-details li, .job-responsibilities li {
+        font-size: 0.85rem;
+    }
 }

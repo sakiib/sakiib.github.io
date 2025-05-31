@@ -1,35 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Sakib</title>
+  <title>Sakib Alamin</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- Template css Files -->
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rubik:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Main container -->
   <div class="main-content">
     <section class="home section"> 
       <div class="container">
         <div class="intro">
           <img src="images/sakib.jpg" alt="profile" class="shadow-dark">
           <h1> Sakib Alamin </h1>
-          <p> 
-            CS '20 Grad, North South University.
-            <br> ICPC Asia-West Continent Finalist.
-            <br> Software Engineer @<a href="https://appscode.com/">appscode</a> December 2020 - Present. 
-            <br> Backend Developer, Golang, Kubernetes, Docker, Hashicorp Vault, K8s CRD, K8s Operator.
-            <br> One of the developers & maintainers @<a href="https://kubevault.com/">kubevault</a>. 
+          <p class="tagline">Site Reliability Engineering @Pathao</p>
+
+          <h2 class="section-title">About Me</h2>
+          <p class="about-text">
+            CS '20 Graduate from North South University and an ICPC Asia-West Continent Finalist.
+            I'm currently a Site Reliability Engineer at Pathao, where I focus on building and maintaining robust, scalable infrastructure.
+            Previously, I worked as a Software Development Engineer at AppsCode, contributing to open-source projects like KubeVault and Stash.
+            My expertise spans Backend Development, Site Reliability Engineering, Kubernetes, Docker, Hashicorp Vault, Go, and cloud platforms like GCP.
           </p>
-          <div class="social-links">
-            <a href="mailto:sakibalamin162@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-            <a href="https://github.com/sakiib" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/sakibalamin/" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+          <h2 class="section-title">Experience</h2>
+          <div class="experience-section">
+
+            <div class="job-entry">
+              <h3>Site Reliability Engineer, Pathao Ltd.</h3>
+              <p class="job-duration">January 2023 - Present · Full-time</p>
+              <p class="job-location">Dhaka, Bangladesh</p>
+              <ul class="job-details">
+                <li><strong>Site Reliability Engineer III:</strong> Jan 2025 - Present</li>
+                <li><strong>Site Reliability Engineer II:</strong> Jan 2023 - Dec 2024</li>
+              </ul>
+              <p class="job-tools">
+                <strong>Tools:</strong> Kubernetes, Go, Bash, Google Cloud Platform (GCP), GKE, Terraform, Ansible, Hashicorp Consul, Hashicorp Vault, GitLab CI/CD, Helm
+              </p>
+            </div>
+
+            <div class="job-entry">
+              <h3>Software Development Engineer, Backend, AppsCode Inc.</h3>
+              <p class="job-duration">December 2020 - December 2022 · 2 yrs 1 mo · Full-time</p>
+              <p class="job-location">Dhaka, Bangladesh</p>
+              <p class="job-projects"><strong>Projects:</strong> KubeVault, Stash</p>
+              <p class="job-tools"><strong>Tools:</strong> Go, Kubernetes, Hashicorp Vault, CRDs, K8s Operator, Docker, Helm, etc.</p>
+              <ul class="job-responsibilities">
+                <li>Migrated Vault operator from Deployment to Statefulset and refactored legacy codebase to build the operator.</li>
+                <li>Improved consistency among various CRDs by introducing new CRDs and redesigning the APIs.</li>
+                <li>Eased the process of DB user management by adding MySQL and Elasticsearch SecretEngine for dynamic credentials generation. Also, added support for HA Storage Backend (Raft), and JWT/OIDC auth method.</li>
+                <li>Limited Vault pod’s voluntary disruption by provisioning Pod Disruption Budget and ensured Vault cluster health by adding a Health Checker.</li>
+                <li>Secured communication with Vault by adding TLS support using cert-manager and added options for managing day-2 workloads like TLS reconfigure, remove, rotate, etc.</li>
+                <li>Ensured code quality and behavior by implementing Unit-tests for various methods.</li>
+                <li>Improved user experience by adding functionalities and commands for generating SecretProviderClass for using Secrets store CSI driver, CRUD operation on root-token/unseal-keys on various Cloud providers, generating root-token, rotating root-token using the unseal keys, etc.</li>
+                <li>Ensured Disaster Recovery across the Vault cluster by writing a Stash plugin that supports Vault Backup & Restore.</li>
+                <li>Improved documentation, wrote release blogs & conducted numerous live webinars on various Vault features.</li>
+              </ul>
+            </div>
+
+          </div> <div class="social-links">
+            <a href="mailto:sakibalamin162@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/sakiib" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sakibalamin/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
           </div>
           <div class="footer">
-            <p>Sakib © 2022. All rights reserved.</p>
+            <p>&copy; 2025 Sakib. All rights reserved.</p>
           </div> 
         </div>
       </div> 
