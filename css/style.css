@@ -1,6 +1,6 @@
- /*Google fonts*/
- @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:500,700,900&display=swap');
 
 /* Universal styles */
 * {
@@ -10,7 +10,6 @@
 }
 
 html, body {
-    /* Removed height: 100% to allow natural content height */
     font-family: 'Montserrat', sans-serif; /* Default body font */
     line-height: 1.6;
     color: #E2E8F0; /* Light gray for general text */
@@ -35,24 +34,17 @@ a:hover {
 
 /* Main Layout */
 .main-content {
-    /* Removed min-height: 100vh to allow content to dictate height */
-    /* Removed display: flex and align-items: flex-start to allow natural block flow */
     justify-content: center; /* Center horizontally */
     background-color: #1A202C; /* A dark charcoal/blue-gray for the background */
-    /* padding: 20px; Add some padding around the content */
 }
 
 .section {
-    /* Removed display: flex and align-items: flex-start to allow natural block flow */
-    /* Removed justify-content: center as it's redundant with container margin: auto */
     width: 100%;
 }
 
 .container {
-    /* max-width: 800px; Increased max-width for better readability */
     width: 100%;
     margin: auto;
-    /* padding: 20px; Inner padding for the container */
 }
 
 /* Home Section - Intro (main card) */
@@ -70,7 +62,7 @@ a:hover {
 .home .intro img {
     height: 180px; /* Slightly adjusted size */
     width: 180px;
-    border-radius: 50%;
+    border-radius: 50%; /* This makes the profile picture circular */
     border: 5px solid #4A5568; /* Softer, complementary border color */
     object-fit: cover; /* Ensures image covers the area */
     margin-bottom: 25px; /* Spacing below image */
@@ -91,7 +83,7 @@ a:hover {
     margin-bottom: 30px; /* More spacing below tagline */
 }
 
-/* Section Titles (About, Experience) */
+/* Section Titles (About, Experience, Awards, Gallery) */
 .section-title {
     font-family: 'Rubik', sans-serif;
     font-size: 1.8rem;
@@ -111,52 +103,58 @@ p.about-text {
     margin-bottom: 30px; /* Spacing below paragraph */
     line-height: 1.8; /* Improved line height for readability */
     text-align: left; /* Align about text left */
-    /* max-width: 600px; Constrain width for readability */
     width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Experience Section */
-.experience-section {
+.experience-section, .awards-section { /* Added .awards-section here for shared styling */
     width: 90%;
-    text-align: left; /* Align job entries left */
-    /* max-width: 600px; Constrain width for readability */
-
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
 
-.job-entry {
-    background-color: #242D3B; /* Even darker background for individual job entries */
+.job-entry, .award-entry { /* Shared styling for job and award entries */
+    background-color: #242D3B;
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 25px; /* Space between job entries */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for entries */
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.job-entry:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
+.job-entry:hover, .award-entry:hover {
+    transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
 .job-entry h3 {
     font-family: 'Rubik', sans-serif;
-    font-size: 1.6rem; /* Slightly larger for company name */
-    color: #4299E1; /* A more prominent blue */
-    margin-bottom: 10px; /* More space below company name */
-    font-weight: 700; /* Bolder */
+    font-size: 1.4rem;
+    color: #4299E1;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.job-entry h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #CBD5E0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .job-duration, .job-location, .job-projects, .job-tools {
     font-size: 0.95rem;
-    color: #A0AEC0; /* Lighter gray for meta info */
+    color: #A0AEC0;
     margin-bottom: 5px;
 }
 
 .job-details, .job-responsibilities {
-    list-style-type: disc; /* Or 'none' if preferred without bullets */
+    list-style-type: disc;
     margin-left: 20px;
     padding-left: 0;
     margin-top: 10px;
@@ -164,20 +162,43 @@ p.about-text {
     color: #E2E8F0;
 }
 
-.job-details li {
-    background-color: #5473a6; /* Even darker background for individual job entries */
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 25px; /* Space between job entries */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for entries */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.job-responsibilities li {
+.job-details li, .job-responsibilities li {
     margin-bottom: 8px;
 }
 
 .job-responsibilities li:last-child {
+    margin-bottom: 0;
+}
+
+/* Awards & Achievements Section */
+.award-entry h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3rem;
+    color: #63B3ED; /* Softer blue for award titles */
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.award-meta, .award-association {
+    font-size: 0.9rem;
+    color: #A0AEC0;
+    margin-bottom: 5px;
+}
+
+.award-details {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #E2E8F0;
+}
+
+.award-details li {
+    margin-bottom: 5px;
+}
+
+.award-details li:last-child {
     margin-bottom: 0;
 }
 
@@ -217,6 +238,46 @@ p.about-text {
     opacity: 0.8;
 }
 
+
+/* Image Gallery Section */
+.image-gallery {
+    width: 90%;
+    margin: 0 auto 40px auto; /* Center the gallery and add bottom margin */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* FORCES two columns */
+    gap: 20px; /* Space between images */
+    padding: 20px; /* Added padding around the whole gallery grid */
+    background-color: #242D3B; /* Slightly darker background for the gallery container */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflow for rounded corners on image */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Use flexbox to center image vertically if needed */
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03); /* Subtle zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* --- SPECIFICITY FIX FOR GALLERY IMAGES --- */
+/* This rule targets images specifically within the .image-gallery to override any broader image styles */
+.image-gallery .gallery-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for rectangular images, adjust as needed */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    display: block; /* Remove extra space below image */
+    border-radius: 8px; /* Set to 8px for rectangular (or 0 for sharp) */
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .main-content {
@@ -252,6 +313,22 @@ p.about-text {
         font-size: 0.9rem;
     }
 
+    .award-entry h3 {
+        font-size: 1.1rem;
+    }
+    .award-meta, .award-association, .award-details li {
+        font-size: 0.85rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on tablets */
+        gap: 15px;
+        padding: 15px;
+    }
+    .image-gallery .gallery-item img { /* Ensure specificity in media query too */
+        height: 180px; /* Adjust image height for tablets */
+    }
+
     .social-links {
         gap: 10px;
     }
@@ -266,6 +343,18 @@ p.about-text {
     .footer p {
         margin-top: 30px;
         font-size: 0.8rem;
+    }
+}
+
+/* New breakpoint for smaller screens (like portrait phones) */
+@media (max-width: 580px) {
+    .image-gallery {
+        grid-template-columns: 1fr; /* Stack images in a single column */
+        gap: 10px;
+        padding: 10px;
+    }
+    .image-gallery .gallery-item img { /* Ensure specificity in media query too */
+        height: 160px; /* Make images a bit taller when stacked */
     }
 }
 
@@ -294,5 +383,11 @@ p.about-text {
     }
     .job-details li, .job-responsibilities li {
         font-size: 0.85rem;
+    }
+    .award-entry h3 {
+        font-size: 1rem;
+    }
+    .award-meta, .award-association, .award-details li {
+        font-size: 0.8rem;
     }
 }
