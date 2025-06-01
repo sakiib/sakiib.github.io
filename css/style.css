@@ -231,6 +231,13 @@ p.about-text {
 }
 
 /* Footer */
+.footer { /* Added this rule for the footer container */
+    width: 100%; /* Ensure it takes full width */
+    text-align: center; /* Center its inline content (like the p tag's text) */
+    padding-bottom: 20px; /* Add some padding at the bottom if needed */
+}
+
+/* Footer */
 .footer p {
     margin-top: 50px; /* More standard spacing */
     color: #A0AEC0;
@@ -351,7 +358,7 @@ p.about-text {
     .image-gallery {
         grid-template-columns: 1fr; /* Stack images in a single column */
         gap: 10px;
-        padding: 10px;
+        padding: 2px;
     }
     .image-gallery .gallery-item img { /* Ensure specificity in media query too */
         height: 160px; /* Make images a bit taller when stacked */
