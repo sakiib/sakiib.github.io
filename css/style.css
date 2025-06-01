@@ -109,11 +109,23 @@ p.about-text {
 }
 
 /* Experience Section */
-.experience-section, .awards-section { /* Added .awards-section here for shared styling */
+.experience-section {
     width: 90%;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+}
+
+.awards-section {
+    width: 90%;
+    margin: 0 auto 40px auto; /* Center the awards and add bottom margin */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* FORCES two columns */
+    gap: 20px; /* Space between awards */
+    padding: 20px; /* Added padding around the whole awards grid */
+    background-color: #242D3B; /* Slightly darker background for the awards container */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .job-entry, .award-entry { /* Shared styling for job and award entries */
@@ -186,8 +198,8 @@ p.about-text {
 }
 
 .award-details {
-    list-style-type: disc;
-    margin-left: 20px;
+    list-style-type: none; /* Removed bullet points */
+    margin-left: 0; /* Adjusted margin as bullet points are removed */
     padding-left: 0;
     margin-top: 10px;
     font-size: 0.95rem;
@@ -327,6 +339,12 @@ p.about-text {
         font-size: 0.85rem;
     }
 
+    .awards-section {
+        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on tablets */
+        gap: 15px;
+        padding: 15px;
+    }
+
     .image-gallery {
         grid-template-columns: repeat(2, 1fr); /* Keep 2 columns on tablets */
         gap: 15px;
@@ -355,6 +373,12 @@ p.about-text {
 
 /* New breakpoint for smaller screens (like portrait phones) */
 @media (max-width: 580px) {
+    .awards-section {
+        grid-template-columns: 1fr; /* Stack awards in a single column */
+        gap: 10px;
+        padding: 2px;
+    }
+
     .image-gallery {
         grid-template-columns: 1fr; /* Stack images in a single column */
         gap: 10px;
