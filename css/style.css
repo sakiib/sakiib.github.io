@@ -96,16 +96,34 @@ a:hover {
 }
 
 /* About Me section */
+.about-me-box {
+    width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #242D3B; /* Same as job/award entry background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px; /* Spacing below the box */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-me-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
 p.about-text {
     font-size: 1.1rem;
     font-weight: 400;
     color: #CBD5E0; /* Softer text color */
-    margin-bottom: 30px; /* Spacing below paragraph */
+    margin-bottom: 0; /* Remove bottom margin as it's now inside a box */
     line-height: 1.8; /* Improved line height for readability */
     text-align: left; /* Align about text left */
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%; /* Take full width of its parent box */
+    margin-left: 0; /* Remove auto margins as it's now inside a box */
+    margin-right: 0;
 }
 
 /* Experience Section */
@@ -317,7 +335,10 @@ p.about-text {
         font-size: 1.8rem;
     }
 
-    .home .intro p.tagline, p.about-text {
+    .home .intro p.tagline {
+        font-size: 1rem;
+    }
+    p.about-text { /* Specificity for about-text in media query */
         font-size: 1rem;
     }
     .section-title {
