@@ -308,7 +308,7 @@ p.about-text {
 /* This rule targets images specifically within the .image-gallery to override any broader image styles */
 .image-gallery .gallery-item img {
     width: 100%;
-    height: 200px; /* Fixed height for rectangular images, adjust as needed */
+    height: 250px; /* Fixed height for rectangular images, adjust as needed */
     object-fit: cover; /* Ensures images fill the space without distortion */
     display: block; /* Remove extra space below image */
     border-radius: 8px; /* Set to 8px for rectangular (or 0 for sharp) */
